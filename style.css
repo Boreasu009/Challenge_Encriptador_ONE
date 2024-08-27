@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+
+
+.logo{
+    width:100px;
+    padding-top:10px;
+    margin-left: 10px;
+    flex-shrink:0;
+}
+
+.background{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Images/wallpaper_minecraft.png);
+  background-size:cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index:-1;
+  
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: 2px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 9%;
+    flex-wrap: wrap;
+}
+
+.text-entrada{
+    border-radius: 15px;
+    resize: none;
+    height: 100%;
+    background:#eee;
+    border: none;
+    background: url(https://s-media-cache-ak0.pinimg.com/originals/0e/1f/c2/0e1fc2e0638e878d3ba8db495152164c.jpg);
+	background-size: cover;
+    background-position:center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    width: 500px;
+    height:450px;
+    font-family: 'Press Start 2P',systen-ui;
+    box-sizing: border-box;
+}
+
+.text-entrada::placeholder{
+    color:rgb(195, 195, 195);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.text-mensaje{
+    
+    border-radius: 15px;
+    resize: none;
+    height: 100%;
+    background:#eee;
+    border: none;
+    background: url(https://static.planetminecraft.com/files/image/minecraft/texture-pack/2021/363/14104498-stone_l.webp);
+    background-size: cover;
+    background-position:center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 15px;
+    width: 500px;
+    height:450px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    
+}
+
+.info{
+   font-size: 15px;
+   color: #ffffff;
+   font-style:italic;
+   margin-left: 10px;
+   font-family: 'sometype-mono', sans-serif;
+   text-shadow: 2px 2px #000000;
+
+}
+
+.btn-encriptar,.btn-desencriptar,.btn-copiar{
+    background: #727272;
+    color: rgb(247, 247, 247);
+    width: 50%;
+    padding: .5rem 0;
+    margin-bottom: .30rem;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+    font-size: 1rem;
+    letter-spacing: .025em;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow:inset 3px 3px 0 rgba(255, 255, 255, 0.5), inset -3px -3px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    
+
+}
+.btn-encriptar:hover,.btn-desencriptar:hover,.btn-copiar:hover{
+    background: rgba(115, 107, 221, 1);
+}
+
+.botones-main,.boton-copiar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-copiar{
+    margin-top: 5%;
+}
+
+.title{
+    font-size: 48px;
+    text-align:center;
+    flex-grow:1;
+    margin:0;
+}
+
+.titulo{
+    flex-grow: 1;
+    text-align: center;
+    margin-right:100px;
+}
+
+footer{
+    background-color:#000000;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    margin-top: auto;
+    
+}
+
+.footer-text{
+    color: rgb(80, 197, 44);
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Minecraft', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+.redes-sociales-links{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-right: 15px;
+    margin-top: -5px;;
+
+}
+
+.redes-sociales-links a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.icono-githu i,.icono-linkedin i{
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+.Imagen-creeper{
+    width: 280px;;
+}
+
+.Texto-no-encontrado{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+.Mensaje-texto{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    text-shadow:-1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; ;
+}
+
+.sub-mensaje-texto{
+    font-family: "Press Start 2P", system-ui;
+    font-size: 10px;
+    text-shadow:-1px 0 black, 0 2px black, 1px 0 black, 0 -1px black; ;
+}
+
+.mensaje-encriptado{
+    font-family: 'Press Start 2P',systen-ui;
+    font-size: 15px;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 10px;
+    box-sizing: border-box;
+    white-space: normal;
+
+}
+
+
+/* Diseño responsivo */
+@media screen and (max-width: 868px) {
+    header {
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .redes-sociales-links{
+        margin-right: 10px;
+    }
+
+    .background
+    {
+        width: 100%;
+    }
+
+    .titulo {
+        
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .icono-github i, .icono-linkedin i {
+        font-size: 20px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .text-entrada,
+    .text-mensaje {
+        width:100%;
+        height: 250px;
+    }
+
+    .botones-main {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar,
+    .btn-copiar {
+        width: 70%;
+    }
+
+    .Imagen-creeper {
+        width: 100px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text{
+        font-size: 15px;
+    }
+}

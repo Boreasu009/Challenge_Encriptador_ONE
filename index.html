@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11c160b18b.js" crossorigin="anonymous"></script>       
+
+</head>
+<body>
+<div class="background"></div>
+<header>
+    <img src="/Images/Logo.png" alt="Logo de Alura Latam" class="logo">
+    <div class="titulo">
+        <h1 class="title">Bienvenido al Encriptador de Texto</h1>
+    </div>
+
+    <div class="redes-sociales-links">
+        <a href="https://github.com/Boreasu009" target="_blank" class="icono-github">
+            <i class="fa-brands fa-square-github fa-beat" style="color: #333;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/stephano-franchezco-beltran-valer-4695a3248/" target="_blank" class="icono-linkedin">
+            <i class="fa-brands fa-linkedin fa-beat" style="color: #0077b5;"></i>
+        </a>
+    </div>
+    
+</header>
+
+<main>
+<section class="seccion-encriptar">
+        <textarea class="text-entrada" cols="30" rows="10" placeholder="Escribe el texto aqui" id="text-entrada"></textarea>
+        <div>
+            <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+        </div>
+
+        <div class= botones-main>
+            <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+</section>
+
+<section>
+
+    <div class="text-mensaje"> 
+        <img src="/Images/Creeper.png" alt="Imagen de Creeper de Minecraft" class="Imagen-creeper" id="Imagen-creeper" >
+        <div class="mensaje-encriptado" id="mensaje-encriptado"> </div>
+        <div class="Texto-no-encontrado">
+            <h2 class="Mensaje-texto" id="Mensaje-texto">Ningún mensaje fue encontrado</h2>
+            <p class="sub-mensaje-texto" id="sub-mensaje-texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+
+        
+
+    </div>
+    
+    <div class="boton-copiar">
+        <button class="btn-copiar" id="btn-copiar" onclick="copiar_text()">Copiar</button>
+
+    </div>
+
+</section>
+</main>
+
+<footer>
+    <div class="footer">
+        <h6 class="footer-text">Creado por Stephano Franchezco Beltran Valer | 2024</h6>
+</footer>
+
+</body>
+<script src="/encriptador.js"></script>
+</html>
